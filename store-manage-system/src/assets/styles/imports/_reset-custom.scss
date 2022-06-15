@@ -1,0 +1,185 @@
+// 重置checkbox
+input[type='checkbox']:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  margin: 0 6px 0 6px;
+  appearance: none;
+  position: relative;
+  vertical-align: middle;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+input[type='checkbox']::before {
+  content: '';
+  color: #fff;
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid #d8d8d8;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: all linear 0.2s;
+  cursor: pointer;
+}
+input[type='checkbox']:hover::before {
+  border-color: $navy;
+}
+
+input[type='checkbox'][disabled]::before,
+input[type='checkbox'].disabled::before {
+  border-color: #d8d8d8 !important;
+  background-color: #eee !important;
+  cursor: not-allowed;
+}
+input[type='checkbox']:checked::before {
+  content: '';
+  border: 1px solid $navy;
+  background-color: $navy;
+  box-sizing: border-box;
+}
+
+input[type='checkbox']:checked:after {
+  content: '\e6b2';
+  display: block;
+  font-family: 'iconfont';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #fff;
+  transform: scale(0.7);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.checkbox input[type='checkbox'],
+.checkbox-inline input[type='checkbox'] {
+  position: relative;
+  margin-left: 0;
+}
+
+.radio input[type='radio'],
+.radio-inline input[type='radio'] {
+  position: relative;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.custom-radio .custom-control-label {
+  position: absolute;
+  margin-top: 3px;
+}
+
+// 重组radio的样式
+input[type='radio'] {
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 12px;
+  height: 12px;
+  position: relative;
+}
+
+input[type='radio']:after {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 0;
+  content: ' ';
+  border: 1px solid $navy;
+  display: inline-block;
+  visibility: visible;
+  border-radius: 50%;
+}
+
+input[type='radio']:checked:before {
+  content: ' ';
+  display: block;
+  position: relative;
+  width: 6px;
+  height: 6px;
+  left: 3px;
+  top: 3px;
+  z-index: 1;
+  border-radius: 50%;
+  background: $navy;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  background: $navy;
+}
+
+// reset modal style
+
+.confirm-modal {
+  width: 430px;
+
+  .modal-body {
+    padding: 10px 20px;
+  }
+}
+
+.modal-header {
+  padding: 12px 20px;
+}
+
+.modal-footer {
+  padding: 10px 20px;
+  border-top: none;
+}
+
+// 编辑模式
+.form-modal {
+  .title {
+    color: #333
+  }
+  .editor {
+    height: 400px;
+  }
+  .code-editer {
+    .code-editer-label {
+      border-left: 1px solid #e5e5e5;
+      margin-left: 12px;
+      font-size: 12px;
+      padding-right: 8px;
+      height: 14px;
+      color: #303133;
+      font-weight: 400;
+      span {
+        margin-left: 12px;
+      }
+    }
+  }
+}
+
+// reset ant css
+.ant-tabs-tab {
+  padding: 12px 20px;
+  margin: 0;
+}
+
+// reset bootstrap code style
+.ant-notification {
+  z-index: 999999;
+  pre {
+    background-color: #fff;
+    border: none;
+    font-size: inherit;
+    color: inherit;
+  }
+}

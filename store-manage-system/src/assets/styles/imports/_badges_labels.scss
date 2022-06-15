@@ -1,0 +1,132 @@
+.label {
+  background-color: $light-gray;
+  color: $label-badge-color;
+  font-weight: 600;
+  padding: 3px 8px;
+  text-shadow: none;
+}
+
+.nav .label,
+.ibox .label {
+  font-size: 10px;
+}
+
+.badge {
+  background-color: $light-gray;
+  color: $label-badge-color;
+  font-size: 11px;
+  font-weight: 600;
+  padding-bottom: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  text-shadow: none;
+}
+
+.label-primary,
+.label-available,
+.label-active,
+.label-confirmed,
+.badge-primary {
+  background-color: rgba($navy, 0.2);
+  color: $navy;
+}
+
+.label-muted {
+  color: #606266;
+}
+
+// When the status is intermediate
+.label-queued,
+.label-saving,
+.label-attaching,
+.label-detaching,
+.label-expanding,
+.label-Booting,
+.label-Shutting,
+.label-spawning,
+.label-scheduling,
+.label-building,
+.label-networking,
+.label-block_device_mapping,
+.label-creating {
+  background-color: rgba($dark-navy, 0.2);
+  color: $dark-navy;
+}
+
+.label-in-use,
+.label-yes,
+.label-success,
+.label-finished,
+.badge-success {
+  background-color: rgba($blue, 0.2);
+  color: $blue;
+}
+
+.label-warning,
+.label-in_process,
+.label-pending_deleting,
+.badge-warning {
+  background-color: rgba($yellow, 0.2);
+  color: $yellow;
+}
+
+.label-warning-light,
+.badge-warning-light {
+  background-color: rgba($yellow, 0.2);
+  color: $yellow;
+}
+
+.label-danger,
+.label-error,
+.label-deleting,
+.label-attaching-error,
+.label-detaching-error,
+.label-creating-error,
+.label-booting-error,
+.label-rebooting-error,
+.label-shutting-error,
+.label-applying-error,
+.label-updating-error,
+.label-deleting-error,
+.label-expanding-error,
+.label-deleted,
+.label-killed,
+.label-deactivated,
+.label-canceled,
+.label-refuse,
+.label-no,
+.badge-danger {
+  background-color: rgba($red, 0.2);
+  color: $red;
+}
+
+.label-info,
+.badge-info {
+  background-color: rgba($lazur, 0.2);
+  color: $lazur;
+}
+
+.label-Poweroff .label-shutoff,
+.label-down,
+.label-suspended {
+  background-color: rgba(#5e5e5e, 0.2);
+  color: #5e5e5e;
+}
+
+.label-inverse,
+.badge-inverse {
+  background-color: rgba(#262626, 0.2);
+  color: #262626;
+}
+
+.label-white,
+.badge-white {
+  background-color: #ffffff;
+  color: #5e5e5e;
+}
+
+.label-white,
+.badge-disable {
+  background-color: #2a2e36;
+  color: #8b91a0;
+}

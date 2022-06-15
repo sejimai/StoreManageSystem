@@ -1,0 +1,55 @@
+// ng-zorro
+@import 'ng-zorro-antd.scss';
+
+// icon-font
+
+// Variables
+@import 'imports/variables';
+
+// INSPINIA Theme Elements
+@import 'imports/typography';
+@import 'imports/navigation';
+@import 'imports/top_navigation';
+@import 'imports/buttons';
+@import 'imports/badges_labels';
+@import 'imports/elements';
+@import 'imports/sidebar';
+@import 'imports/base';
+@import 'imports/pages';
+@import 'imports/spinners';
+@import 'imports/modal';
+
+// Landing page styles
+@import 'imports/landing';
+
+// Media query style
+@import 'imports/media';
+
+// Custom style
+// Your custom style to override base style
+@import 'imports/custom';
+
+// 树选择组件
+@import '~@angular/cdk/overlay-prebuilt.css';
+
+// 项目的重置样式
+@import 'imports/reset-custom';
+
+// Clear layout on print mode
+@media print {
+  nav.navbar-static-side {
+    display: none;
+  }
+  body {
+    overflow: visible !important;
+  }
+
+  #page-wrapper {
+    margin: 0;
+  }
+}
+
+// 调整树选择框 下拉框层级
+.cdk-overlay-container {
+  z-index: 99999999;
+}

@@ -1,0 +1,57 @@
+// Basic Colors
+$navy: #167be0; // Primary color
+$dark-navy: darken($navy, 8%); // Dark Primary color
+$dark-gray: #c2c2c2; // Default color
+$blue: #337ab7; // Success color
+$lazur: #23c6c8; // Info color
+$yellow: #f8ac59; // Warning color
+$red: #ed5565; // Danger color
+
+// Various colors
+$text-color: #676a6c; // Body text
+$gray: #f3f3f4; // Background wrapper color
+$light-gray: #d1dade; // Default label, badge
+$label-badge-color: #5e5e5e;
+$light-blue: #f3f6fb;
+$light-yellow: #febd46;
+$title-color: #303133; // 标题颜色
+$sub-title-color: #606266; // 二级标题颜色
+$placeholder-color: #bcbcbc;
+
+// Spiner color and margin
+$spin-color: $navy;
+$spin-margin: 0 auto;
+
+// IBOX colors ( default panel colors)
+$border-color: #e7eaec; // IBox border
+$ibox-title-bg: #ffffff; // IBox Background header
+$ibox-content-bg: #ffffff; // IBox Background content
+
+//Sidebar width
+$sidebar-width: 220px;
+$sidebar-mini-width: 70px;
+
+//Border radius for buttons
+$btn-border-radius: 4px;
+
+// navbar
+$navbar-bg: #233646;
+$navbar-height: 50px;
+
+//Navigation
+$nav-bg: #2f4050;
+$nav-text-color: #303133;
+$default-bg: #e8f2fc;
+$nav-width: 220px;
+$nav-col-width: 44px;
+
+
+// Fontsize
+$text-size: 12px;
+
+// Button Color
+$confirm-disabled: #8bbdf0;
+$confirm-hover: #4595e6;
+$danger-border: #a4c9f3;
+$danger-disabled: #549ee8;
+$default-color: #146fca;

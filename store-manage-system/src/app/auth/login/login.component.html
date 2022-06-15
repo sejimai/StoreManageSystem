@@ -1,0 +1,39 @@
+<div class="ibox-content login-content" [ngClass]="{ 'sk-loading': isLoading }">
+  <div class="sk-spinner sk-spinner-wave">
+    <div class="sk-rect1"></div>
+    <div class="sk-rect2"></div>
+    <div class="sk-rect3"></div>
+    <div class="sk-rect4"></div>
+    <div class="sk-rect5"></div>
+  </div>
+  <form role="form" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <div class="form-group input-group">
+      <input
+        type="text"
+        class="form-control"
+        formControlName="username"
+        placeholder="请输入用户名"
+        required
+      />
+    </div>
+    <div class="form-group input-group m-t">
+      <input
+        type="password"
+        class="form-control"
+        formControlName="password"
+        autocomplete="off"
+        placeholder="请输入密码"
+        required
+      />
+    </div>
+    <button
+      nz-button
+      nzType="primary"
+      type="submit"
+      [disabled]="loginForm.invalid"
+      class="full-width m-t"
+    >
+      登录
+    </button>
+  </form>
+</div>
