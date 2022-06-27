@@ -6,7 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./auth-layout.component.scss'],
 })
 export class AuthLayoutComponent implements OnInit {
+  year: number = 2022;
+
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    const date = new Date();
+    this.year = date.getFullYear();
+  }
 }

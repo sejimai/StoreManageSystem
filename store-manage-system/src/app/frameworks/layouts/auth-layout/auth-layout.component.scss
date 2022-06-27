@@ -1,0 +1,42 @@
+.auth-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #092850;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
+    padding-right: 10px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+
+    img {
+      width: 43px;
+      height: 43px;
+      margin-right: 10px;
+    }
+
+    .platform {
+      padding-top: 8px;
+      margin: 0;
+    }
+  }
+
+  .middle-box {
+    flex: 1;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+
+  .copyright {
+    margin: 13px auto;
+    color: #6bb5ff;
+    font-weight: 400;
+    text-align: center;
+  }
+}
