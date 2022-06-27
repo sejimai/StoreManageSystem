@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validator, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -18,6 +18,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
 
   onLogin() {
+    this.isLoading = true;
     console.log('login');
   }
 }
